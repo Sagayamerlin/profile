@@ -35,8 +35,27 @@
     <section>
         <h2> My Online Resume</h2>
         <p>Click below to view my online resume:</p>
-        <a href="https://Sagayamerlin.github.io/my-resume/" target="_blank"> View My Resume</a>
-    </sectio>
+        <a href="https://sagayamerlin.github.io/profile/" target="_blank"> View My Resume</a>
+    </section>
+    <section>
+        <h2> My Online Resume</h2>
+        <p>Click below to view my online resume:</p>
+        <a href="https://sagayamerlin.github.io/profile/" target="_blank"> View My Resume</a>
+    </section>
+    <section>
+        <h2>Share My Resume</h2>
+        <p>Click below to copy the link:</p>
+        <input type="text" id="resumeLink" value="https://sagayamerlin.github.io/profile/" readonly>
+        <button onclick="copyLink()">Copy Link</button>
+        <script>
+            function copyLink() {
+                var copyText = document.getElementById("resumeLink");
+                copyText.select();
+                document.execCommand("copy");
+                alert("Resume link copied: " + copyText.value);
+            }
+        </script>
+    </section>
     <footer>
         <p>© 2025 Sagayamerlin. All Rights Reserved.</p>
     </footer>
